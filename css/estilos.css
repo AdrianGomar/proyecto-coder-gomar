@@ -3,237 +3,250 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  boder: red 1px solid;
-
 }
 
 body {
-  background-image: linear-gradient(to right, #341f04, #311f09, #2e1f0e, #2a1e12, #271e15, #271e15, #271e15, #271e15, #2a1e12, #2e1f0e, #311f09, #341f04);
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+
+font-family: 'roboto', sans-serif;
+margin: 0;
+overflow-x: hidden!important;
+width: 100%!important;
 }
 
+h1{ font-size: 3em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+a{list-style: none; }
+li{ font-size: 1.25em;}
+
+
+.container{
+  max-width: 1400px;
+  margin: auto;
+  padding: 50px 50px;
+}
 /* -----------HEADER--------------- */
-.header {
-  background-color:#341F04;
-  display:inline-flex;
-  justify-content:space-between;
-  align-items: center;
-  width: 100vw;
-  padding: 10px;
-  /* position: absolute; */
-}
+ header{
+  background-color: rgb(245,245,245);
+ }
 
-.header .logo {
-  cursor: pointer;
-  align-items: flex-start;
-  margin: 0px 5px 0px 5px;
-}
+ header .img{
+  margin: 0;
+  padding: 25px 30px;
+ }
+  
 
-.header h1 {
-  color: #c2a280;
+ header .title{
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  text-align: left;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
-
-}
-
-.header .logo img {
-  height: 70px;
-  width: auto;
-  transition: all 0.3s;
-  background-color: none;
-}
-
-.header .logo img:hover {
-  transform: scale(1.2);
-}
-
-/* --------BARRA NAV------------- */
-.nav_list li {
-  display: inline-block;
-  padding: 0 20px;
-  text-align: right;
-
-}
-
-.header .nav_list li:hover {
-  transform: scale(1.1);
-}
-
-.header .nav_list a {
-  font-size: 600;
-  text-decoration: none;
-  color: #D8D9D7;
-  display: inline-flex;
-}
-
-.header .nav_list a:hover {
-  color: rgb(255, 184, 91);
-}
-
-/* ----------- BANNER-------------- */
-.banner {
-  width: 100vw;
-  height: 500px;
-  background-image: url(../imagenes/banner.jpg);
-  background-repeat: no-repeat;
-  background-size: 100vw;
-  background-position: center;
-
-}
-
-.banner .banner_texto {
-  display: inline-block;
-  text-align: center;
-  justify-items: center;
-  color:#59402A ;
-
-
-}
-
-.banner .banner_texto h2 {
-  color: #f7d1b0;
-  font-size: 3rem;
-  margin: 150px 0px 10px 15px;
-  text-shadow: 2px black;
-
-}
-
-.banner_texto h3 {
-  color: antiquewhite;
-  font-size: 2rem;
-  margin: 5px 0px 0px 15px;
-
-}
-
-.banner_boton {
-  margin-top: 20px;
-  transition: all 0.3s;
-  background-color: NONE;
-
-}
-
-.banner_boton a {
-  color: rgb(255, 184, 91);
   font-size: 2.5em;
-  border: 2px rgb(255, 184, 91) solid;
-  padding-block: 5px;
-  cursor: pointer;
-  text-decoration: none;
+ }
+
+  header .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+header .logo{
+
+  width: 80px;
+  margin: 0;
+  padding: 10px 0px;
+  justify-content: center;
+ }
+
+header .container a{
+  justify-content: center;
+  display: flex;
+ }
+
+.nav{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 0.8em;
+  padding: 0px 0px 0px 0px;
+ }
+
+.nav_list {
+  padding: 0px 0px;
+}
+  
+header a{
+    padding: 5px 12px;
+    text-decoration:none;
+    font-weight: bold;
+    color: black;
+  }
+
+header a:hover{
+    color:cornflowerblue;
+  }
+
+  /*-----------------media header - responsive -----------------  */
+@media (min-width: 768px){
+
+  header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  header .container{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 0px;
+    height: 60px;
+  }
+  header .logo{
+    width: 40px;
+    margin: 0;
+    padding: 10px 0px;
+  display: flex;
+  }
+  header .title{
+    display: flex;
+    font-size: 1.2rem;
+    padding: 0px 0px;
+    margin: 0;
+  }
+  header .container a{
+    text-align: center center;
+  }
+header nav{
+  display: flex;
+  justify-content: end;
+  font-size: 0.7em;
+}
+header .nav_list{
+    display: flex;
+    margin:0px 0px 8px 0px;
+    
+  }
 
 }
 
-.banner_boton:hover{
-  transform: scale(1.1);
+/* -----------HERO------------- */
+
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ flex-direction: column;
+ height: 90vh;
+ color: white;
+ background-position: center center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-image:linear-gradient(
+  0deg,
+  rgba(0, 0, 0, 0.349),
+  rgba(0, 0, 0, 0.342)
+ )
+ ,url(../imagenes/banner.jpg);
+ margin: auto;
 }
 
-
-.banner_2 {
-  display: inline-flex;
-  color: antiquewhite;
-  font-size: 3rem;
-  justify-items: center;
-  margin: 200px 20px 20px 100px;
-}
-
-/* ------------SECCION SERVICIOS--------------- */
-.servicios {
-  background-color: rgba(0, 0, 0, 0.267);
-  width: 100vw;
-  height: 100%;
-  min-width: 50%;
+section h2{
+  margin: 5px 10px;
+  text-align: center;
   display: block;
+  font-size: 2em;
 }
 
-.servicios_texto {
-  background-color: ghostwhite;
+section .boton{
+  text-decoration:none;
+  padding: 10px 10px;
+  border: 2px solid Cornflowerblue;
+  border-radius: 20PX ;
+  color: rgb(255, 255, 255);
+  background-color: Ccc;
+  margin: 20px;
+}
+
+section .boton:hover{
+  color:rgb(255, 255, 255);
+  background-color: rgb(10, 52, 131);
+}
+/* ------------SERVICIOS-SEPARA--------------- */
+.serv_h3{
+padding: 10px;
+text-align: center;
+
+}
+
+/* ----------------SERVICIOS-----------  */
+.cont_separador{
+  padding: 0px 0px 15px 0px;
+  margin: 0px 0px 15px 0px;
+  background-color:rgb(32, 32, 32);
+  
+} 
+
+.cont_separador h2{
+padding-top: 15px;
+color: Cornflowerblue;
+font-size: 2.7em;
+text-align: center;
+}
+
+.cont_separador p{
   text-align: center;
-  width: 100vw;
-  height: 100%;
-  padding: 10px 10px 10px 10px;
+  color: white;
+  }
+
+/* --------- DESARROLLOS--------------- */
+#desarrollos{
+  background-color: rgb(32, 32, 32);
 }
 
+#desarrollos h5{
+  color:Cornflowerblue ;
+}
 
+/* ----------------nuestros clientes--------- */
 
-.media_Texto h3 {
-
+#clientes{
+  background-color: rgb(56, 56, 56);
+  margin-top: 5px;
+}
+#clientes .cont_separador{
+  background-color:rgb(56, 56, 56);
+} 
+.carousel-item p{
   text-align: center;
-  padding-block: 10px;
-  color: antiquewhite;
-  font-size: 1rem;
-}
-
-.media_Texto p {
-  text-align: center;
-  line-height: 20px;
-  font-size: 1rem;
+  margin-top: 10px;
+  color: Cornflowerblue;
 }
 
 
-.section_conteiner {
-  border: rgb(2, 3, 61) 5px solid;
-  display: inline-flex;
+/* --------------------------footer---------------------------------- */
+footer{
+  background-color: rgb(228, 228, 228);
+} 
+footer .container{
+  padding: 12px 12px;
+}
+footer i{
+  color: Cornflowerblue;
 }
 
-.section_nosotros {
-  width: 100vw;
-  display: inline-block;
-}
+@media (min-width: 992px){
 
-.section_1 {
-  align-items: flex-start;
-  padding: 10px 10px 10px 10px;
-  justify-items: flex-end;
-  width: 100vw;
-}
+ footer .box{
+padding-top: 20px;
+margin-bottom: 10px;
+ }
 
-.section_1 h2 {
-  text-align: center;
-  margin-bottom: 10px;
-}
 
-.section_1 p {
-  text-align: center;
-  display: block;
-  line-height: 20px;
-}
-
-.section_1 img {
-  width: 400px;
-  height: 400px;
-  margin-left: 40%;
-}
-
-.conteiner_box {
-  margin-top: 20px;
 }
 
 
-.box {
-  width: 100vw;
-  height: 100px;
-  display: inline-flex;
-  background-color: rgb(1, 35, 78);
-}
 
-.box p {
-  color: antiquewhite;
-  font-size: 1rem;
-  justify-items: center;
-  margin: 30px 10px 10px 40px;
-
-}
-
-.box_2 {
-  text-align: center;
-  background-color: black;
-  color: antiquewhite;
-  margin-top: 50px;
-
-}
-/* ----------------mapa-formulario contacto---------- */
+/* ----------------mapa-formulario contacto------------------- */
 
 .mapa iframe{
 
@@ -243,10 +256,19 @@ body {
   align-items: center;
   justify-content:space-between;
   border-radius: 10px;
-
+/* -------------------------------------------------------------- */
 }
+
+.formulario{
+  display: flex;
+  padding-bottom: 15px;
+  width: 80vw;
+  
+}
+
 form {
-  background-color: #00000066;
+ 
+  background-color: #000000;
   width: 450px;
   margin: auto;
   padding: 10px 20px;
@@ -257,7 +279,7 @@ form {
 }
 
 form h2 {
-  color: antiquewhite;
+  color: cornflowerblue;
   text-align: center;
   margin: 0;
   font-size: 30px;
@@ -274,10 +296,69 @@ textarea {
   border: none;
 }
 
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
 form textarea {
   min-height: 100px;
   max-height: 200px;
   max-width: 100%;
 }
 
-/* ----------- ------------------------------ */
+/* -----------hero  ------------------------------ */
+
+.hero_servicios{
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+    )
+    ,url(../imagenes/servicios/banner.png);
+    margin: auto;
+}
+
+.hero_servicios h2{
+color: cornflowerblue;
+font-weight: 600;
+font-size: 3em;
+text-align: center;
+margin-top: 15px;
+}
+
+.hero_servicios p{
+  color: rgb(255, 254, 254);
+  font-size: 1em;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 10px; 
+}
+
+@media (min-width: 900px){
+
+  .hero_servicios h2{
+    color: cornflowerblue;
+    font-weight: 600;
+    font-size: 4.5em;
+    text-align: center;
+    margin-top: 15px;
+    }
+    
+    .hero_servicios p{
+      color: rgb(255, 254, 254);
+      font-size: 2em;
+      font-weight: 600;
+      text-align: center;
+      margin: 0 10px; 
+    } 
+}
