@@ -45,6 +45,7 @@ li{ font-size: 1.25em;}
   font-size: 2.5em;
  }
 
+
   header .container{
   display: flex;
   flex-direction: column;
@@ -52,16 +53,23 @@ li{ font-size: 1.25em;}
   }
   
 header .logo{
-
   width: 80px;
   margin: 0;
   padding: 10px 0px;
   justify-content: center;
  }
 
+ header .logo:hover{
+ transform: scale(1.2);
+}
+
 header .container a{
   justify-content: center;
   display: flex;
+ }
+
+ header .nav_list a:hover{
+  transform: scale(1.2);
  }
 
 .nav{
@@ -136,7 +144,7 @@ header .nav_list{
   align-items: center;
   justify-content: center;
  flex-direction: column;
- height: 90vh;
+ height: 60vh;
  color: white;
  background-position: center center;
  background-size: cover;
@@ -160,53 +168,56 @@ section h2{
 section .boton{
   text-decoration:none;
   padding: 10px 10px;
-  border: 2px solid Cornflowerblue;
+  border: 2px solid rgb(252, 252, 252);
   border-radius: 20PX ;
   color: rgb(255, 255, 255);
-  background-color: Ccc;
+  background-color: rgba(56, 56, 56, 0.418);
   margin: 20px;
 }
 
 section .boton:hover{
   color:rgb(255, 255, 255);
-  background-color: rgb(10, 52, 131);
+  background-color:cornflowerblue;
+  transform: scale(1.2);
+  border: 1px solid rgb(252, 252, 252);
+  border-radius: 20PX ;
 }
 /* ------------SERVICIOS-SEPARA--------------- */
 .serv_h3{
 padding: 10px;
 text-align: center;
-
 }
+.serv_h3:hover{
+  transform: scale(1.2);
+ }
 
 /* ----------------SERVICIOS-----------  */
 .cont_separador{
   padding: 0px 0px 15px 0px;
   margin: 0px 0px 15px 0px;
   background-color:rgb(32, 32, 32);
-  
 } 
-
 .cont_separador h2{
 padding-top: 15px;
 color: Cornflowerblue;
 font-size: 2.7em;
 text-align: center;
 }
-
+.cont_separador h2:hover{
+  transform: scale(1.2);
+ }
 .cont_separador p{
   text-align: center;
   color: white;
   }
-
+ 
 /* --------- DESARROLLOS--------------- */
 #desarrollos{
   background-color: rgb(32, 32, 32);
 }
-
 #desarrollos h5{
   color:Cornflowerblue ;
 }
-
 /* ----------------nuestros clientes--------- */
 
 #clientes{
@@ -222,7 +233,6 @@ text-align: center;
   color: Cornflowerblue;
 }
 
-
 /* --------------------------footer---------------------------------- */
 footer{
   background-color: rgb(228, 228, 228);
@@ -233,23 +243,17 @@ footer .container{
 footer i{
   color: Cornflowerblue;
 }
-
 @media (min-width: 992px){
 
- footer .box{
+  footer .box{
 padding-top: 20px;
 margin-bottom: 10px;
  }
-
-
 }
-
-
 
 /* ----------------mapa-formulario contacto------------------- */
 
 .mapa iframe{
-
   width: 90vw;
   height: 300px ;
   margin: 40px 60px;
@@ -258,16 +262,12 @@ margin-bottom: 10px;
   border-radius: 10px;
 /* -------------------------------------------------------------- */
 }
-
 .formulario{
   display: flex;
   padding-bottom: 15px;
-  width: 80vw;
-  
+  width: 80vw; 
 }
-
 form {
- 
   background-color: #000000;
   width: 450px;
   margin: auto;
@@ -277,7 +277,6 @@ form {
   border-radius: 7px;
   box-shadow:
 }
-
 form h2 {
   color: cornflowerblue;
   text-align: center;
@@ -285,7 +284,6 @@ form h2 {
   font-size: 30px;
   margin-bottom: 20px;
 }
-
 form input,
 textarea {
   width: 100%;
@@ -295,7 +293,6 @@ textarea {
   font-size: 17px;
   border: none;
 }
-
 textarea {
   min-height: 100px;
   max-height: 200px;
@@ -309,50 +306,58 @@ form textarea {
 
 /* -----------hero servicios ------------------------------ */
 
-.hero_comodin{
-  
+.hero_comodin{ 
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
-  
-    background-color: #1b172c;
-   
+    height: 20vh; 
+    background-color: #1b172c; 
     margin: auto;
 }
-
-.hero_servicios h2{
+.hero_comodin h2{
 color: cornflowerblue;
 font-weight: 600;
-font-size: 3em;
+font-size: 2.5em;
 text-align: center;
 margin-top: 15px;
 }
-
-.hero_servicios p{
-  color: rgb(255, 254, 254);
+.hero_comodin h2:hover{
+  color:rgb(255, 255, 255);
+}
+.hero_comodin p{
+  color: rgb(173, 173, 173);
   font-size: 1em;
   font-weight: 600;
   text-align: center;
-  margin: 0 10px; 
+  margin: 15px 10px; 
 }
-
 @media (min-width: 900px){
 
-  .hero_servicios h2{
+.hero_comodin h2{
     color: cornflowerblue;
     font-weight: 600;
     font-size: 4.5em;
     text-align: center;
     margin-top: 15px;
-    }
-    
-    .hero_servicios p{
-      color: rgb(255, 254, 254);
-      font-size: 2em;
-      font-weight: 600;
+    }   
+.hero_comodin p{
+      color: rgb(173, 173, 173);
+      font-size: 1.5em;
+      /* font-weight:; */
       text-align: center;
-      margin: 0 10px; 
+      margin: 15px 20px;  
     } 
 }
+
+/* -----------modi nosotros */
+.hero_comodin_p{
+  display: flex;
+  align-items: center;
+  color: rgb(173, 173, 173);
+  font-size: 1.2em;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 10px; 
+  margin: 15px 10px; 
+} 
