@@ -16,7 +16,6 @@ body {
   font-family: "roboto", sans-serif;
   margin: 0;
   width: 100%;
-  background-image: url(/imagenes/45degreee.jpg);
 }
 body h1 {
   font-size: 3em;
@@ -181,6 +180,9 @@ header .nav_list a:hover {
     font-size: 2.5em;
   }
 }
+section {
+  padding: 0 0 15px 0;
+}
 section .container {
   background-color: white;
 }
@@ -200,7 +202,7 @@ section .container {
 
 .cont_separador {
   display: block;
-  padding: 0px 0px 15px 0px;
+  padding: 10px;
   background-color: rgb(32, 32, 32);
 }
 .cont_separador h2 {
@@ -220,10 +222,16 @@ section .container {
 #desarrollos .container {
   width: 100vw;
   height: 60%;
-  padding: 0px 50px;
+  padding: 40px 50px;
+  background-color: rgb(32, 32, 32);
 }
 #desarrollos .container h5 {
   color: Cornflowerblue;
+}
+
+#clientes .container {
+  background-color: rgb(32, 32, 32);
+  padding-top: 20px;
 }
 
 footer {
@@ -307,7 +315,7 @@ article .container {
     text-align: center;
   }
   .tarjeta_imagen_1 {
-    background-image: url("/imagenes/nosotros/nosotros.jpg");
+    background-image: url("../../imagenes/nosotros/nosotros.jpg");
     background-size: cover;
     background-position: center center;
     box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
@@ -315,7 +323,7 @@ article .container {
     width: 400px;
   }
   .tarjeta_imagen_2 {
-    background-image: url("/imagenes/nosotros/enfoque.jpg");
+    background-image: url("../../imagenes/nosotros/enfoque.jpg");
     background-size: cover;
     background-position: center center;
     box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.28);
@@ -328,7 +336,6 @@ article .container {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 20vh;
   background-color: #1b172c;
   margin: auto;
 }
@@ -371,7 +378,7 @@ article .container {
 }
 
 .tarjeta_imagen_3 {
-  background-image: url("/imagenes/nosotros/experiencia.jpg");
+  background-image: url("../../imagenes/nosotros/experiencia.jpg");
   background-size: cover;
   background-position: center center;
   box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.28);
