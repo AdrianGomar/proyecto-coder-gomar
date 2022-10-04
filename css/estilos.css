@@ -192,7 +192,7 @@ section .container {
   text-align: center;
 }
 .serv_h3:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 #clientes .container {
@@ -260,7 +260,7 @@ footer .container {
   }
 }
 .hero_comodin p {
-  font-size: 0.8em;
+  font-size: 1.2em;
   text-align: center;
   color: rgb(173, 173, 173);
   text-shadow: 1px 2px 2px rgba(28, 110, 164, 0.42);
@@ -297,7 +297,10 @@ article .container {
 }
 
 @media (min-width: 720px) {
-  .hero_comodin p {
+  .hero_comodin h2 {
+    font-size: 2.8em;
+  }
+  p {
     font-size: 1em;
     text-align: center;
     color: rgb(173, 173, 173);
@@ -351,7 +354,7 @@ article .container {
 .hero_comodin h2 {
   color: cornflowerblue;
   font-weight: 600;
-  font-size: 2.5em;
+  font-size: 2.3em;
   text-align: center;
   margin-top: 15px;
 }
@@ -371,28 +374,25 @@ article .container {
   .hero_comodin h2 {
     color: cornflowerblue;
     font-weight: 600;
-    font-size: 3.5em;
+    font-size: 2.8em;
     text-align: center;
     margin-top: 15px;
   }
   .p_servicios {
     color: rgb(173, 173, 173);
-    font-size: 1.6em;
+    font-size: 1.8em;
     text-align: center;
     margin: 15px 20px;
   }
 }
 #clientes_2 .container {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
-.tarjeta_imagen_3 {
-  background-image: url("../../imagenes/nosotros/experiencia.jpg");
-  background-size: cover;
-  background-position: center center;
-  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.28);
-  height: 200px;
-  width: 200px;
+.carousel {
+  display: flex;
+  align-content: center;
 }
 
 .carousel-item p {
@@ -401,6 +401,57 @@ article .container {
   color: Cornflowerblue;
 }
 
+.galeria_img {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.galeria_img li {
+  margin: 5px;
+}
+.galeria_img img {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}
+.galeria_img imghover {
+  transform: scale(1.2);
+}
+
+@media (min-width: 720px) {
+  .tarjeta_texto {
+    width: 50%;
+    text-align: initial;
+    min-width: 300px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 20px;
+  }
+  .tarjeta_texto h3 {
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 1.8em;
+    text-shadow: 1px 2px 2px rgba(28, 110, 164, 0.42);
+  }
+  .tarjeta_texto p {
+    font-size: 1em;
+    text-align: center;
+  }
+  .tarjeta_imagen_3 {
+    background-image: url("../imagenes/nosotros/experiencia.jpg");
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.28);
+    height: 300px;
+    width: 300px;
+  }
+}
 .mapa iframe {
   width: 90vw;
   height: 300px;
