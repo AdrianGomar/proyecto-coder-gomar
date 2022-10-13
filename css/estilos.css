@@ -104,11 +104,10 @@ header .nav_list a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
   }
   header .title {
     display: flex;
-    font-size: 1.4rem;
+    font-size: 1rem;
     padding: 0;
     margin: 0;
   }
@@ -337,7 +336,7 @@ article .container {
     background-image: url("../imagenes/nosotros/enfoque.jpg");
     background-size: cover;
     background-position: center center;
-    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.28);
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
     height: 400px;
     width: 400px;
   }
@@ -397,7 +396,7 @@ article .container {
 .carousel-item p {
   text-align: center;
   margin-top: 10px;
-  color: Cornflowerblue;
+  color: cornflowerblue;
 }
 
 .galeria_img {
@@ -421,6 +420,7 @@ article .container {
   transform: scale(1.2);
   box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
+  cursor: pointer;
 }
 
 @media (min-width: 720px) {
@@ -442,7 +442,7 @@ article .container {
     background-image: url("../imagenes/nosotros/experiencia.jpg");
     background-size: cover;
     background-position: center center;
-    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.28);
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
     height: 300px;
     width: 300px;
   }
