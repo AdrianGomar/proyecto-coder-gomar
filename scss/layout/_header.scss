@@ -1,96 +1,154 @@
-header {
-    background-color: rgb(245, 245, 245);
-    a {
-        padding: 5px 12px;
-        text-decoration: none;
-        font-weight: bold;
-        color: black;
-        &:hover {
-            color: cornflowerblue;
-        }
-    }
-    .img {
-        margin: 0;
-        padding: 25px 30px;
-    }
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        & a {
-            justify-content: center;
-            display: flex;
-        }
-    }
-    .logo {
-        width: 80px;
-        margin: 0;
-        padding: 10px 0px;
-        justify-content: center;
-        &:hover {
-            transform: scale(1.1);
-        }
-    }
-    .title{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        font-size: 2.5em;
-        }
-    .nav {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        font-size: 0.8em;
-        padding: 0px 0px 0px 0px;
-    }
-    .nav_list {
-        padding: 0px 0px;
-        & a:hover {
-            transform: scale(1.1);
-        }
-    }
+.header{
+    background-color: $color-header;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 2px 2px $color-sombra;
 }
-@media (min-width: 720px)
-{
-    header{
+
+
+.nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    // width: 100vw;
-    .title{
-        display: flex;
-        font-size: 1rem;
-        padding: 0;
-        margin: 0;
+    max-width: 1400px;
+    margin: 0 80px;
+ }
+
+.nav_link{
+    color: $color-secundario;
+    text-decoration: none;
+    padding: 0 0;
+}
+
+.logo{
+    display:flex;
+    font-size: 1.2em;
+    color: $color-menu;
+    text-shadow: 1px ;
+    font-weight: 600;
+    line-height: 60px;
+    padding: 0 0;
+    text-shadow: 1px 2px 2px $color-sombra;;
+}
+
+/*menu hamburguesa*/
+
+.nav_menu{
+    display: flex;
+}
+
+.nav_menu_item{
+    font-size: 0.8em;
+    font-weight: 600;
+    margin: 0 10px;
+    line-height: 60px;
+    text-transform: uppercase;
+    width: max-content;
+}
+.nav_toggle{
+    color: black;
+    background: none;
+    border:none;
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 900px){
+    
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 40px;
+ }
+    
+    .logo{
+        font-size: 1em;
+        font-weight: 600;
+        padding-left: 10px;
+        line-height: 60px;
+    }
+
+    
+    .nav_menu_item{
+        font-size: 0.7em;
+        margin: 0 10px;
+        line-height: 60px;
+        text-transform: uppercase;
+        width: max-content;
+    }
+}
+
+@media (max-width: 768px){
+
+    .header{
+        height: 60px;
+        margin: 0 0;
     }
     .logo{
-        width: 45px;
-        margin: 0 20%;
-        padding: 10px 0px;
-        display: flex;
+        font-size: 1em;
+        padding-left: 20px;
+        line-height: 60px;
+        font-weight: 8600;
     }
-    .container{
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 0px 0px;
-        height: 60px;
+
+    .nav{
+        margin: 0 10px;
+     }
+
+    .nav_menu{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: $color-menu-hamburguesa;
+        position:fixed;
+        left: 0;
+        top:60px;
+        width: 100%;
+        padding: 20px 0;
+        left: 100%;
+        transition: left 0.3s;
+        z-index: 1;
         & a{
-        text-align: center center;
-        
+            color: $color-blanco;
         }
-        nav{
-            display: flex;
-            justify-content: end;
-            font-size: 0.7em;
-            padding-top: 5px;
-            .nav_list{
-                display: flex;
-                margin:0px 0px 8px 0px;
-                padding-left: 10px;
-                
-            }
-        }
-        }
+
     }
+
+    .nav_menu_item{
+        line-height: 70px;
+    }
+
+    .nav_menu_link:hover, .nav_menu_link_active{
+        background-color: none;
+        color: $color-menu-hamburguesa;
+    }
+
+    .nav_toggle{
+        display: block;
+    }
+
+.nav_menu_visible{
+left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -45,97 +45,128 @@ body .container {
   padding: 50px 50px;
 }
 
-header {
+.header {
   background-color: rgb(245, 245, 245);
-}
-header a {
-  padding: 5px 12px;
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
-}
-header a:hover {
-  color: cornflowerblue;
-}
-header .img {
-  margin: 0;
-  padding: 25px 30px;
-}
-header .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-header .container a {
-  justify-content: center;
-  display: flex;
-}
-header .logo {
-  width: 80px;
-  margin: 0;
-  padding: 10px 0px;
-  justify-content: center;
-}
-header .logo:hover {
-  transform: scale(1.1);
-}
-header .title {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: 2.5em;
-}
-header .nav {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: 0.8em;
-  padding: 0px 0px 0px 0px;
-}
-header .nav_list {
-  padding: 0px 0px;
-}
-header .nav_list a:hover {
-  transform: scale(1.1);
+  height: 60px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 1px 2px 2px rgba(28, 110, 164, 0.42);
 }
 
-@media (min-width: 720px) {
-  header {
+.nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 80px;
+}
+
+.nav_link {
+  color: rgb(32, 32, 32);
+  text-decoration: none;
+  padding: 0 0;
+}
+
+.logo {
+  display: flex;
+  font-size: 1.2em;
+  color: rgb(49, 47, 77);
+  text-shadow: 1px;
+  font-weight: 600;
+  line-height: 60px;
+  padding: 0 0;
+  text-shadow: 1px 2px 2px rgba(28, 110, 164, 0.42);
+}
+
+/*menu hamburguesa*/
+.nav_menu {
+  display: flex;
+}
+
+.nav_menu_item {
+  font-size: 0.8em;
+  font-weight: 600;
+  margin: 0 10px;
+  line-height: 60px;
+  text-transform: uppercase;
+  width: max-content;
+}
+
+.nav_toggle {
+  color: black;
+  background: none;
+  border: none;
+  font-size: 25px;
+  padding: 0 20px;
+  line-height: 60px;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    max-width: 1400px;
+    margin: 0 40px;
   }
-  header .title {
-    display: flex;
-    font-size: 1rem;
-    padding: 0;
-    margin: 0;
-  }
-  header .logo {
-    width: 45px;
-    margin: 0 20%;
-    padding: 10px 0px;
-    display: flex;
-  }
-  header .container {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0px 0px;
-    height: 60px;
-  }
-  header .container a {
-    text-align: center center;
-  }
-  header .container nav {
-    display: flex;
-    justify-content: end;
-    font-size: 0.7em;
-    padding-top: 5px;
-  }
-  header .container nav .nav_list {
-    display: flex;
-    margin: 0px 0px 8px 0px;
+  .logo {
+    font-size: 1em;
+    font-weight: 600;
     padding-left: 10px;
+    line-height: 60px;
+  }
+  .nav_menu_item {
+    font-size: 0.7em;
+    margin: 0 10px;
+    line-height: 60px;
+    text-transform: uppercase;
+    width: max-content;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    height: 60px;
+    margin: 0 0;
+  }
+  .logo {
+    font-size: 1em;
+    padding-left: 20px;
+    line-height: 60px;
+    font-weight: 8600;
+  }
+  .nav {
+    margin: 0 10px;
+  }
+  .nav_menu {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #2c3e50;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    padding: 20px 0;
+    left: 100%;
+    transition: left 0.3s;
+    z-index: 1;
+  }
+  .nav_menu a {
+    color: rgb(255, 255, 255);
+  }
+  .nav_menu_item {
+    line-height: 70px;
+  }
+  .nav_menu_link:hover, .nav_menu_link_active {
+    background-color: none;
+    color: #2c3e50;
+  }
+  .nav_toggle {
+    display: block;
+  }
+  .nav_menu_visible {
+    left: 0;
   }
 }
 .hero {
@@ -144,7 +175,7 @@ header .nav_list a:hover {
   justify-content: center;
   flex-direction: column;
   height: 60vh;
-  color: white;
+  color: rgb(255, 255, 255);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -156,6 +187,7 @@ header .nav_list a:hover {
   text-align: center;
   display: block;
   font-size: 1.6em;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
 }
 .hero .boton {
   text-decoration: none;
@@ -165,6 +197,7 @@ header .nav_list a:hover {
   color: rgb(255, 255, 255);
   background-color: rgba(56, 56, 56, 0.418);
   margin: 25px;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
 }
 .hero .boton:hover {
   color: rgb(255, 255, 255);
@@ -189,9 +222,6 @@ section .container {
 .serv_h3 {
   padding: 10px;
   text-align: center;
-}
-.serv_h3:hover {
-  transform: scale(1.1);
 }
 
 #clientes .container {
@@ -240,11 +270,16 @@ footer {
 footer i {
   color: Cornflowerblue;
 }
+footer a {
+  list-style: none;
+  text-decoration: none;
+}
 footer p {
   padding-bottom: 10px;
   text-align: center;
 }
-footer .container {
+
+.container {
   padding: 12px 12px;
 }
 
@@ -258,28 +293,21 @@ footer .container {
     padding-bottom: 10px;
   }
 }
-.hero_comodin p {
-  font-size: 1.2em;
-  text-align: center;
-  color: rgb(173, 173, 173);
-  padding: 5px 10px;
-}
-
 article .container {
   padding: none;
 }
 
 #nosotros .container {
-  display: flex;
+  display: contents;
   justify-content: center;
 }
 
 .tarjeta_texto {
-  width: 50%;
   text-align: initial;
+  padding-top: 20px;
   min-width: 300px;
-  max-width: 600px;
-  display: flex;
+  max-width: 800px;
+  display: content;
   flex-direction: column;
   justify-content: center;
 }
@@ -287,6 +315,7 @@ article .container {
   text-align: center;
   color: cornflowerblue;
   font-size: 1.3em;
+  text-shadow: 1px 2px 2px rgba(28, 110, 164, 0.42);
 }
 .tarjeta_texto p {
   font-size: 1em;
@@ -294,7 +323,30 @@ article .container {
   padding: 15px 15px;
 }
 
-@media (min-width: 720px) {
+.tarjeta_imagen_1 {
+  display: block;
+  align-items: center center;
+  background-image: url("../imagenes/nosotros/nosotros.jpg");
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
+  height: 150px;
+}
+
+.tarjeta_imagen_2 {
+  display: block;
+  background-image: url("../imagenes/nosotros/enfoque.jpg");
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
+  height: 150px;
+}
+
+@media (min-width: 768px) {
+  #nosotros .container {
+    display: flex;
+    justify-content: center;
+  }
   .hero_comodin h2 {
     font-size: 2.8em;
   }
@@ -347,45 +399,70 @@ article .container {
   justify-content: center;
   flex-direction: column;
   background-color: #1b172c;
-  margin: auto;
+  margin-bottom: 10px;
 }
 .hero_comodin h2 {
   color: cornflowerblue;
+  text-shadow: 1px 2px 2px rgba(28, 110, 164, 0.42);
   font-weight: 600;
-  font-size: 2.3em;
+  font-size: 2em;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 .hero_comodin h2:hover {
   color: rgb(255, 255, 255);
 }
-
-.p_servicios {
-  color: rgb(173, 173, 173);
-  font-size: 1em;
-  font-weight: 600;
+.hero_comodin p {
+  font-size: 0.8em;
   text-align: center;
-  margin: 15px 10px;
+  color: rgb(255, 255, 255);
+  padding: 5px 10px;
+  margin-bottom: 0;
 }
 
-@media (min-width: 900px) {
-  .hero_comodin h2 {
-    color: cornflowerblue;
-    font-weight: 600;
-    font-size: 2.8em;
-    text-align: center;
-    margin-top: 15px;
+.servicios__general {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.servicios__div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  gap: 10px;
+}
+.servicios__div img {
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+}
+.servicios__div p {
+  font-size: 80%;
+}
+
+@media (max-width: 768px) {
+  #nosotros .container {
+    justify-content: center;
   }
-  .p_servicios {
-    color: rgb(173, 173, 173);
-    font-size: 1.8em;
+  .hero_comodin h2 {
+    font-size: 1.6em;
+  }
+  p {
+    font-size: 0.7em;
     text-align: center;
-    margin: 15px 20px;
+    color: black;
+    padding: 5px 10px;
   }
 }
 #clientes_2 .container {
   display: flex;
   justify-content: center;
+  max-width: 1400px;
 }
 
 .carousel {
@@ -415,11 +492,12 @@ article .container {
   width: 150px;
   height: 150px;
   margin: 10px;
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
 }
 .galeria_img img:hover {
   transform: scale(1.2);
-  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.15);
-  border-radius: 20px;
+  box-shadow: 0px 6px 6px 0px rgba(28, 110, 164, 0.42);
   cursor: pointer;
 }
 
