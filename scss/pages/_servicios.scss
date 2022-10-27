@@ -11,7 +11,7 @@
         color: $color-primario;
         text-shadow: 1px 2px 2px $color-sombra;
         font-weight: 600;
-        font-size: 2em;
+        font-size: 1.5em;
         text-align: center;
         margin-top: 10px;
         &:hover{
@@ -19,7 +19,7 @@
           }
         }
         p{
-          font-size: 0.8em;
+          font-size: 1em;
           text-align: center;
           color: $color-blanco;
           padding: 5px 10px;
@@ -58,20 +58,36 @@
 
 ////////////* media 768px*///////////// 
 
-@media (max-width:768px){
+@media (min-width:768px){
 
   #nosotros  .container{
       justify-content: center;
       
   }
 
-  .hero_comodin h2{
-   font-size: 1.6em ;
+  .hero_comodin {
+  h2{
+   font-size: 1.5em ;
   }
   p{
-      font-size: 0.7em;
-      text-align: center;
-      color: black;
-      padding: 5px 10px;
+      font-size: 0.8em;
+      color: $color-blanco;
+      
   }
+}
+}
+
+@media (min-width:960px){
+  .hero_comodin {
+    h2{
+     font-size: 2.2em ;
+    }
+    p{
+        font-size: 1.5em;
+        font-weight:300;
+        color: $color-blanco;
+        
+    }
+  }
+
 }

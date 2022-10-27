@@ -22,26 +22,31 @@
   <link rel="stylesheet" href="../css/estilos.css">
     <title>HG SOLUCIONES INFORMATICAS</title>
 
-</head>
-<body>
-    <header class="header">
-        <nav class="nav">
-            <h1 class="logo nav_link">HG Soluciones Informaticas</h1>
-            <buttom class="nav_toggle" aria-label="abrir menu">
-              <i class="fa-solid fa-bars"></i>
-            </buttom>
-            <ul class="nav_menu nav_menu_visible">
-            <li class="nav_menu_item"><a class="nav_menu_link nav_link" href="../index.html">Inicio</a></li>
-            <li class="nav_menu_item"><a class="nav_menu_link nav_link" href="../paginas/nosotros.html">Nosotros</a></li>
-            <li class="nav_menu_item"><a class="nav_menu_link nav_link" href="../paginas/servicios.html">Servicios</a></li>
-            <li class="nav_menu_item"><a class="nav_menu_link nav_link" href="../paginas/clientes.html">Clientes</a></li>
-            <li class="nav_menu_item"><a class="nav_menu_link nav_link" href="../paginas/contacto.html">Contacto</a></li>
+  </head>
+  <body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid m">
+        <a class="navbar-brand p-0 m-0"  href="../index.html"><h1> HG Soluciones Informaticas</h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse m-1" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-20 ">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../paginas/nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../paginas/servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="../paginas/clientes.html">Clientes</a></li>
+            <li class="nav-item"><a class="nav-link active text-primary" aria-current="page" href="../paginas/contacto.html">Contacto</a></li>
           </ul>
-        </nav>
-      </header>
+        </div>
+      </div>
+    </nav>
+  </header>
     <!-- hero con titulo -->
     <section class="hero_comodin">
         <h2 title="contacto">CONTACTO</h2>
+        <p class="contacto_p"> Envianos tu consulta o comentario </p>
     </section>
 
     <!-- -------------mapa google------------------------------ -->
@@ -57,7 +62,7 @@
 
     <!-- ------------formulario ------------------------------ -->
 
-    <form class="formulario">
+    <form class="formulario" data-aos="flip-down"  data-aos-duration="1000" data-aos-once="true">
         <div>
             <input type="text" name="Nombre" placeholder="Nombre" id="Nombre">
         </div>
@@ -102,7 +107,7 @@ crossorigin="anonymous"></script>
   <script>
     AOS.init();
   </script>
-<script src="/js/index.js"></script>
+
 </body>
 
 </html>

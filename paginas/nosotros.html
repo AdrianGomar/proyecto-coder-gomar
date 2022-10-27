@@ -24,23 +24,26 @@
 
 
 </head>
-
 <body>
-  <header class="header">
-    <nav class="nav">
-        <h1 class="logo nav_link">HG Soluciones Informaticas</h1>
-        <buttom class="nav_toggle" aria-label="abrir menu">
-          <i class="fa-solid fa-bars"></i>
-        </buttom>
-        <ul class="nav_menu nav_menu_visible">
-        <li class="nav_menu_item"><a class="nav_menu_link nav_link" href="../index.html">Inicio</a></li>
-        <li class="nav_menu_item"><a class="nav_menu_link nav_link" href="../paginas/nosotros.html">Nosotros</a></li>
-        <li class="nav_menu_item"><a class="nav_menu_link nav_link" href="../paginas/servicios.html">Servicios</a></li>
-        <li class="nav_menu_item"><a class="nav_menu_link nav_link" href="../paginas/clientes.html">Clientes</a></li>
-        <li class="nav_menu_item"><a class="nav_menu_link nav_link" href="../paginas/contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+<header class="header">
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid m">
+      <a class="navbar-brand p-0 m-0"  href="../index.html"><h1> HG Soluciones Informaticas</h1></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-20 ">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="../index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="../paginas/nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="../paginas/servicios.html">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="../paginas/clientes.html">Clientes</a></li>
+          <li class="nav-item"><a class="nav-link active text-primary" aria-current="page" href="../paginas/contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
     <!-- hero con titulo y boton de accion -->
     <section class="hero_comodin">
         <h2>NOSOTROS</h2>
@@ -49,7 +52,7 @@
     <main>
       <section id="nosotros">
         <article class="container">
-          <div class="tarjeta_imagen_1" data-aos="fade-down-right" data-aos-duration="2000"  data-aos-once="true"></div> 
+          <div class="tarjeta_imagen_1" data-aos="fade-down-right" data-aos-duration="2000"  data-aos-once="true" alt="dos personas usando notebooks"></div> 
             <div class="tarjeta_texto" data-aos="fade-left"data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="3000" data-aos-once="true">
                 <h3>Nuestra Experiencia</h3>
                 <p >Decidimos volcarnos al mercado PYME para alcanzarle un servicio
@@ -65,7 +68,7 @@
                 <p>Es lograr, un resultado que beneficie y facilite la operatoria de PYME, negocio o empresa.</p>
                 <p>Ponderando principalmente la atención al cliente y cuidando de cada uno de ellos, razones por las cuales nos permiten establecer una relación de muchos años de trabajo con un excelente nivel de servicio y satisfacción.</p>
               </div>
-                <div class="tarjeta_imagen_2" data-aos="fade-down-right" data-aos-duration="2000" data-aos-once="true"></div>
+                <div class="tarjeta_imagen_2" data-aos="fade-down-right" data-aos-duration="2000" data-aos-once="true" alt="un hombre usando una lapizera"></div>
         </article>
       </section>
     </main>
@@ -98,7 +101,7 @@ crossorigin="anonymous"></script>
   <script>
     AOS.init();
   </script>
-<script src="/js/index.js"></script>
+
 </body>
 
 </html>
