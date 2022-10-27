@@ -40,7 +40,8 @@
   justify-content: center;
   align-items: center;
   width: 400px;
-  gap:10px;
+  height: 400px;
+  
 
   img{
     height: 200px;
@@ -48,9 +49,11 @@
     border-radius: 20px
   }
   p{
-    font-size: 80%;
+    font-size: 1em;
+    text-align: center center;
+    margin:auto;
   }
-  }
+}
 
 
   
@@ -61,8 +64,7 @@
 @media (min-width:768px){
 
   #nosotros  .container{
-      justify-content: center;
-      
+      justify-content: center;   
   }
 
   .hero_comodin {
@@ -70,9 +72,18 @@
    font-size: 1.5em ;
   }
   p{
-      font-size: 0.8em;
+      font-size: 2em;
       color: $color-blanco;
       
+  }
+}
+
+.servicios__div{
+
+  p{
+    font-size: 1em;
+    text-align: center center;
+    margin:auto;
   }
 }
 }
@@ -89,5 +100,4 @@
         
     }
   }
-
 }

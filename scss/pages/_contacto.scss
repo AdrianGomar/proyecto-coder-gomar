@@ -20,6 +20,10 @@
     box-sizing: border-box;
     border-radius: 7px;
     margin-bottom: 10px;
+
+    & label{
+      color: $color-blanco;
+    } 
   }
   
   form input,
